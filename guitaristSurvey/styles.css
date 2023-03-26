@@ -1,0 +1,50 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #202033;
+  color: #efefef;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+h1 {
+  margin-bottom: -10px;
+}
+
+form {
+  width: 60vw;
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  padding-bottom: 2em;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, textarea {
+  background-color: #101023;
+  border: 1px #101023;
+  color: #efefef;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Guitarist Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Guitarist Survey Form</h1>
+    <p id="description">Thank you for taking the time to help improve our services.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name 
+        <input id="name" type="text" required placeholder="Enter your name"/>
+      </label>
+      <label for="email" id="email-label">
+        Email 
+        <input id="email" type="email" required placeholder="Enter your email"/>
+      </label>
+      <label for="number" id="number-label">
+        Age (optional) 
+        <input id="number" type="number" min="0" max="120" placeholder="Age"/> 
+      </label>
+      <label for="dropdown">
+        How many guitars do you own?
+        <select id="dropdown"> 
+          <option value="0">0 </option>
+          <option value="1">1 </option>
+          <option value="2">2 </option>
+          <option value="3">3 </option>
+          <option value="4">4 </option>
+          <option value="5">5+ </option>
+        </select>
+      </label>
+      <label>What describes your current experience level</label>
+      <label for="beginner">
+        <input id="beginner" type="radio" name="level" class="inline" checked="checked" value="1"/> Beginner
+      </label>
+      <label for="intermediate">
+        <input id="intermediate" type="radio" name="level" class="inline" value="2"/> Intermediate
+      </label>
+      <label for="advanced">
+        <input id="advanced" type="radio" name="level" class="inline" value="3"/> Advanced
+      </label>
+      <label for="expert">
+        <input id="expert" type="radio" name="level" class="inline" value="4"/> Expert
+      </label>
+      <label>What other instruments (if any) do you play?</label>
+      <label for="bass">
+        <input id="bass" value="bass" type="checkbox" name="instruments" class="inline" /> Bass
+      </label>
+      <label for="piano">
+        <input id="piano" value="piano" type="checkbox" name="instruments" class="inline" /> Piano
+      </label>
+      <label for="violin">
+        <input id="violin" value="violin" type="checkbox" name="instruments" class="inline" /> Violin
+      </label>
+      <label for="drums">
+        <input id="drums" value="drums" type="checkbox" name="instruments" class="inline" /> Drums
+      </label>
+      <label for="other">
+        <input id="other" value="other" type="checkbox" name="instruments" class="inline" /> Other(s)
+      </label>
+      <label for="suggestions">Any suggestions or future products you would like to see?
+          <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="Enter your suggestions here..."></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>
